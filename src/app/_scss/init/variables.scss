@@ -1,0 +1,33 @@
+// Var's typography — font-family
+$font-primary: 'Roboto', sans-serif;
+$font-code: monospace;
+$font-ico: 'genericabold';
+$font-title: $font-ico;
+
+// Var's typography — weight
+$hair: 100;
+$ultra-light: 200;
+$light: 300;
+$regular: 400;
+$book: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black: 900;
+
+$sidenav-w: 65px;
+
+// Dégradés
+$gd-btn: linear-gradient(272deg, #22CDA9 0%, #A3DA96 100%);
+
+// Colors
+$color-primary: white;
+$color-font: black;
+$color-background: white;
+
+// Other
+$transition: all ease .2s;
+
+$br-max: 99rem;
+$br-round: 50%;
+$br-base: 12px;

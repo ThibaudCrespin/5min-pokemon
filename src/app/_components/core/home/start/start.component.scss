@@ -1,0 +1,43 @@
+@import "init/variables";
+
+:host {
+    display: block;
+    margin: auto;
+
+    h1 {
+        width: 45vw;
+        text-align: center;
+        color: $color-primary;
+        font-family: $font-ico;
+        font-size: 6em;
+        font-weight: bold; 
+        text-transform: uppercase;
+    }
+
+    button {
+        position: absolute;
+        bottom: 10vh;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        height: 52px;
+        width: 266px;
+        background: $gd-btn;
+        color: $color-primary;
+        font-family: $font-ico;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        border-radius: 50px;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $gd-btn;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            border: 5px solid $color-primary;
+            transition: $transition;
+        }
+    }
+}

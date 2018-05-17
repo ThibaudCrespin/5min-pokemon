@@ -1,0 +1,9 @@
+@import 'init/variables';
+
+:host {
+    display: flex;
+    margin-top: 78px;
+    min-height: calc(100vh - 78px);
+    padding: 0 15vw;
+    background-color: grey;
+}
