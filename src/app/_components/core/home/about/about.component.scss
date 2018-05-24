@@ -1,0 +1,49 @@
+@import "init/variables";
+
+:host {
+    display: block;
+    min-height: calc(100vh - 78px);
+    padding: 0 15vw;
+
+    h1 {
+        color: darkblue;
+        font-family: $font-ico;
+        font-size: 5em;
+        font-weight: bold; 
+        text-transform: uppercase;
+        margin: 40px 0;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            width: 30vw;
+            height: 70vh;
+            justify-content: space-around;
+
+            p {
+                line-height: 2em;
+                font-size: 1.3em;
+                text-align: right;
+                overflow: scroll;
+                margin: 30px;
+            }
+        }
+
+        .side {
+            display: block;
+            margin: auto 0;
+            
+
+            img {
+                width: 35vw;
+                height: auto;
+            }
+            
+        }
+    }
+}

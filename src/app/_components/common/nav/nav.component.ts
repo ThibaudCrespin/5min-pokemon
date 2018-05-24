@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScrollToConfigOptions, ScrollToService } from '@nicky-lenaers/ngx-scroll-to';
 
 @Component({
   selector: 'app-nav',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  constructor(private scrollToService: ScrollToService) { }
+
+  go(_target: any) {
+    const config: ScrollToConfigOptions = {
+      target: _target
+    };
+
+    this.scrollToService.scrollTo(config);
+  }
 
   ngOnInit() {
   }

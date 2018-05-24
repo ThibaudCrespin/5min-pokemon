@@ -1,11 +1,19 @@
 @import "init/variables";
 
 :host {
-    display: block;
-    margin: auto;
+    display: flex;
+    width: 100vw;
+    padding: 0 15vw;
+    background-color: grey;
+    flex-direction: column;
+    min-height: calc(100vh - 78px);
 
     h1 {
+        display: block;
+        margin: 0 auto;
+        padding: 30vh 0;
         width: 45vw;
+        height: 60vh;
         text-align: center;
         color: $color-primary;
         font-family: $font-ico;
@@ -15,12 +23,8 @@
     }
 
     button {
-        position: absolute;
-        bottom: 10vh;
-        left: 0; 
-        right: 0; 
-        margin-left: auto; 
-        margin-right: auto; 
+        display: block;
+        margin: auto;
         height: 52px;
         width: 266px;
         background: $gd-btn;

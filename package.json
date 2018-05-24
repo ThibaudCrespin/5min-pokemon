@@ -23,6 +23,7 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
+    "@nicky-lenaers/ngx-scroll-to": "^0.6.1",
     "core-js": "^2.4.1",
     "include-media": "^1.4.9",
     "normalize-scss": "^7.0.1",

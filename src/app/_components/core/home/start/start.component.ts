@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scroll-to';
 
 @Component({
   selector: 'app-start',
@@ -7,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StartComponent implements OnInit {
 
-  constructor() { }
+  constructor(private scrollToService: ScrollToService) { }
+
+  go() {
+    const config: ScrollToConfigOptions = {
+      target: 'about',
+      duration: 1500,
+    };
+
+    this.scrollToService.scrollTo(config);
+  }
 
   ngOnInit() {
   }
