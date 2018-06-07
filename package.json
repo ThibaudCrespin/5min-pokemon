@@ -9,8 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "demo": "ng build --prod --base-href 'https://thibaudcrespin.github.io/5min-pokemon/' --output-path './docs'",
-    "deploy": "git subtree push --prefix dist origin gh-pages"
+    "demo": "ng build --prod --base-href 'https://thibaudcrespin.github.io/5min-pokemon/' --output-path './docs'"
   },
   "private": true,
   "dependencies": {
