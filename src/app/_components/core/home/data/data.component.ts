@@ -9,11 +9,15 @@ import { Chart } from 'angular-highcharts';
 })
 export class DataComponent implements OnInit {
   public chart: Chart;
+  public charts: any;
 
   constructor() {
     this.chart = new Chart({
       chart: {
         type: 'column',
+        backgroundColor: 'transparent',
+        borderWidth: 0,
+        width: 850
       },
       title: {
         text: null
@@ -21,14 +25,16 @@ export class DataComponent implements OnInit {
       xAxis: {
         min: 0,
         max: 6,
+        gridLineWidth: 0,
         categories: ['1', '2', '3', '4', '5', '6', '7'],
         title: {
           text: 'Génération'
-        }
+        },
+        tickWidth: 0
       },
       yAxis: {
         min: 0,
-        max: 150,
+        max: 200,
         title: {
           text: 'Nombre de Pokémon'
         },
@@ -51,7 +57,8 @@ export class DataComponent implements OnInit {
       series: [{
         name: 'Nombre de Pokémon',
         data: [166, 165, 155, 120, 105, 80, 85],
-        color: '#2f63cd'
+        color: '#2f63cd',
+        pointWidth: 90
       }],
       credits: {
         enabled: false
@@ -59,5 +66,20 @@ export class DataComponent implements OnInit {
     });
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.charts = {
+      attack: {
+        name: 'Attaque',
+        color: '#6dc283'
+      },
+      defense: {
+        name: 'Défense',
+        color: '#cb4076'
+      },
+      speed: {
+        name: 'Vitesse',
+        color: '#e59883'
+      }
+    };
+  }
 }

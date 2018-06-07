@@ -17,17 +17,19 @@ export class NumberComponent implements OnInit {
       chart: {
         type: 'bar',
         plotBorderWidth: 0,
-        style: {
-          color: 'blue'
-        }
+        backgroundColor: 'transparent'
       },
       title: {
-        text: ''
+        text: this.data.name,
+        style: {
+          color: '#e1e1e1',
+          fontSize: '2em'
+        }
       },
       xAxis: {
         min: 0,
         max: 3,
-        categories: ['0-50', '50-100', '100-150', '150-200'],
+        categories: ['150-200', '100-150', '50-100', '0-50'],
         title: {
           text: 'Points'
         },
@@ -38,11 +40,16 @@ export class NumberComponent implements OnInit {
             fontWeight: 'bold',
             color: 'gray'
           }
-        }
+        },
+        labels: {
+          rotation: -90,
+        },
+        tickWidth: 0
       },
       yAxis: {
         min: 0,
-        max: 150,
+        max: 100,
+        gridLineWidth: 0,
         title: {
           text: 'Nombre de Pokémon'
         },
@@ -52,7 +59,11 @@ export class NumberComponent implements OnInit {
             fontWeight: 'bold',
             color: 'gray'
           }
-        }
+        },
+        labels: {
+          enabled: false
+        },
+        tickWidth: 0
       },
       legend: {
         enabled: false
@@ -63,7 +74,9 @@ export class NumberComponent implements OnInit {
       series: [
         {
           name: 'Nombre de Pokémon',
-          data: [0, 166, 165, 155, 120, 105, 80, 85]
+          data: [10, 60, 50, 30],
+          color: this.data.color,
+          pointWidth: 55
         }
       ],
       credits: {

@@ -1,4 +1,26 @@
-<h1>Les pokémon</h1>
+<h1 class="page">Les pokémon</h1>
 <h2>Quelques données sur les Pokémon</h2>
 
-<div [chart]="chart"></div>
+<div class="numbers">
+    <div [chart]="chart"></div>
+    <ul>
+        <li class="green">
+            <p class="op-5">Attaque Moyenne</p>
+            <p>79,0</p>
+        </li>
+        <li class="red">
+            <p class="op-5">Défense Moyenne</p>
+            <p>73,8</p>
+        </li>
+        <li class="orange">
+            <p class="op-5">Vitesse Moyenne</p>
+            <p>74,2</p>
+        </li>
+    </ul>
+</div>
+
+<div class="points">
+    <app-number [data]="charts.attack"></app-number>
+    <app-number [data]="charts.defense"></app-number>
+    <app-number [data]="charts.speed"></app-number>
+</div>

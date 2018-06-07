@@ -15,13 +15,41 @@
         text-transform: uppercase;
         font-size: 1.3em;
         font-weight: bold;
-        padding: 50vh 0;
+        padding: 40vh 0;
 
         li {
-            margin: 10px 0;
+            margin: 20px 0;
+            position: relative;
+            color: transparent;
+            transition: all ease .5s;
             
             &:hover {
                 cursor: pointer;
+                color: $light-grey;
+
+                &::before {
+                    color: $light-grey;
+                }
+            }
+
+            &::before {
+                color: $lighter-grey;
+                display: block;
+                position: absolute;
+                right: 0;
+                bottom: -.3em;
+                content: '';
+                width: 30px;
+                border-bottom: 2px solid currentColor;
+            }
+
+            &.active {
+                color: $light-grey;
+
+                &::before {
+                    color: $dark-red;
+                    width: 40px;
+                }
             }
         }
     }

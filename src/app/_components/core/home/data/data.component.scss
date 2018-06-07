@@ -2,11 +2,71 @@
 
 :host {
     display: block;
-    min-height: 100vh;
+    min-height: 120vh;
     padding: 0 15vw;
     background: url('../../../../../assets/pictures/background/bulbizarre.png');
     background-size: 30vh;
     background-position: -100px center;
     background-repeat: no-repeat;
     background-color: white;
+
+    .numbers {
+        display: flex;
+        height: 40vh;
+        justify-content: space-between;
+
+        app-number {
+            width: 60vw;
+        }
+
+        ul {
+            text-align: right; 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            line-height: 2em;
+            font-size: 1.4em;
+            font-family: $font-ico;
+    
+            li {
+                p {
+                    &:first-child {
+                        text-transform: uppercase;
+                        font-weight: $bold;
+                        position: relative;
+                        margin: 0 0 1.3em 0;
+
+                        &::before {
+                            display: block;
+                            position: absolute;
+                            right: 0;
+                            bottom: -.3em;
+                            content: '';
+                            width: 30px;
+                            border-bottom: 4px solid currentColor;
+                        }
+                    }
+    
+                    &:last-child {
+                        text-transform: uppercase;
+                        font-weight: $extra-bold;
+                        font-size: 3em;
+                        letter-spacing: .08em;
+                    }
+                }
+            }
+        }
+    }
+
+    .points {
+        display: flex;
+        height: 30vh;
+        justify-content: space-between;
+
+        app-number {
+            width: 25vw;
+        }
+    }
+
+    
 }
