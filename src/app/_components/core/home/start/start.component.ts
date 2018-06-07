@@ -14,6 +14,7 @@ export class StartComponent implements OnInit {
     const config: ScrollToConfigOptions = {
       target: 'about',
       duration: 1500,
+      offset: -78
     };
 
     this.scrollToService.scrollTo(config);

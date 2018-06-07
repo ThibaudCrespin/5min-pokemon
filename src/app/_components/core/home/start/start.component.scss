@@ -4,7 +4,6 @@
     display: flex;
     width: 100vw;
     padding: 0 15vw;
-    background-color: grey;
     flex-direction: column;
     min-height: calc(100vh - 78px);
 
@@ -44,5 +43,19 @@
             border: 5px solid $color-primary;
             transition: $transition;
         }
+    }
+
+    video#bgvid { 
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100vh;
+        z-index: -10;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        margin: 40px 0;
     }
 }

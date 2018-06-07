@@ -1,0 +1,12 @@
+@import "init/variables";
+
+:host {
+    display: block;
+    min-height: 100vh;
+    padding: 0 15vw;
+    background: url('../../../../../assets/pictures/background/bulbizarre.png');
+    background-size: 30vh;
+    background-position: -100px center;
+    background-repeat: no-repeat;
+    background-color: white;
+}

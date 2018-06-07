@@ -1,0 +1,16 @@
+@import "init/variables";
+
+:host {
+    display: block;
+    min-height: 100vh;
+    padding: 0 15vw;
+    background-color: white;
+
+    &:before {
+        background: url('../../../../../assets/pictures/background/salameche.png');
+        background-size: 0vh;
+        background-position: center center;
+        background-repeat: no-repeat;
+        transform: scaleX(-1);
+    }
+}

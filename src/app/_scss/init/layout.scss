@@ -136,3 +136,16 @@ a {
 .f-9 {
   flex: 9;
 }
+
+h1 {
+  color: darkblue;
+  font-family: $font-ico;
+  font-size: 5em;
+  font-weight: bold; 
+  text-transform: uppercase;
+  padding: 40px 0;
+
+  &::before {
+    border: 10px solid yellow;
+}
+}

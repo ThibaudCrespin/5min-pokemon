@@ -4,15 +4,11 @@
     display: block;
     min-height: calc(100vh - 78px);
     padding: 0 15vw;
-
-    h1 {
-        color: darkblue;
-        font-family: $font-ico;
-        font-size: 5em;
-        font-weight: bold; 
-        text-transform: uppercase;
-        margin: 40px 0;
-    }
+    background: url('../../../../../assets/pictures/background/pikachu.png');
+    background-size: 80vh;
+    background-position: -100px center;
+    background-repeat: no-repeat;
+    background-color: white;
 
     .content {
         display: flex;

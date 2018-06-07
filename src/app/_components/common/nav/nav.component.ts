@@ -12,7 +12,8 @@ export class NavComponent implements OnInit {
 
   go(_target: any) {
     const config: ScrollToConfigOptions = {
-      target: _target
+      target: _target,
+      offset: -78
     };
 
     this.scrollToService.scrollTo(config);
